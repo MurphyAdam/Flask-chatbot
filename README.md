@@ -2,7 +2,7 @@
 
 Flask-chatbot is a small PWA that is trained with the [Python Chatterbot](https://chatterbot.readthedocs.io/en/stable/).
 
-This app also contains the source code by which you can train a it on your Massanger chat. 
+This app also contains the source code by which you can train your bot on your Massanger chat. 
 
 [Live demo](https://flask-chatbotx.herokuapp.com/).
 
