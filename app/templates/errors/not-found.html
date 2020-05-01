@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+  {% block body %}
+  <div class="has-padding-top-2"></div>
+  <div class="section">
+    <div class="container">
+      {% include 'underscore/_flash_messages.html' %}
+      <div class="columns is-centered">
+        <div class="column is-fullwidth">
+          <div class="card">
+           <div class="card-content">
+            <h1 class="title sign-in-up-title is-4">
+			  <svg id="i-info" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="22" height="22" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+				     <path d="M16 14 L16 23 M16 8 L16 10" />
+				     <circle cx="16" cy="16" r="14" />
+			  </svg>
+              Not Found
+            </h1>
+            <p>
+            	The page you are looking for does not seem to exist. Or you do not have permission to access it. Maybe login with proper credentials and try again.
+            </p>
+        </div>
+      </div>
+    </div>
+  </div>
+ </div>
+</div>
+{% endblock %}

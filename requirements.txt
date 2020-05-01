@@ -1,0 +1,9 @@
+gunicorn
+bleach
+pyyaml<5.2,>=5.1
+chatterbot
+chatterbot-corpus
+python-dotenv
+Flask
+Flask-SeaSurf
+flask-talisman

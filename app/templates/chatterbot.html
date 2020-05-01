@@ -1,0 +1,76 @@
+{% extends "layout.html" %}
+{% block footer_js %}
+{{ super() }}
+<script type="text/javascript" src="{{url_for('static', filename='js/homemade/chatbot.min.js', _external=True)}}"></script>
+{% endblock footer_js %}
+{% block body %}
+<div class="has-padding-top-2"></div>
+  <div class="section">
+    <div class="container">
+      {% include 'underscore/_flash_messages.html' %}
+    <div class="columns is-marginless is-centered">
+     <div class="column is-two-thirds">
+       <div class="card animated slideInUp">
+        <div class="card-content">
+                        <div class="media">
+                            <div class="media-left">
+                                <figure class="image is-48x48">
+                                    <img class="is-rounded" src="https://www.gravatar.com/avatar/5beb6288b37391868418d8d212b35db0?d=identicon&s=64'">
+                                </figure>
+                            </div>
+                            <div class="title is-4">
+                                <p>
+                                    <a class="button is-primary is-small is-outlined is-bold" href="#">
+                                        Adam (Chatterbot)
+                                        &nbsp;&nbsp;
+                                        <span title="Chatterbot">
+                                            <svg id="i-checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                                                <path d="M2 20 L12 28 30 4" />
+                                            </svg>
+                                        </span>
+                                    </a>
+                            </div>
+                        </div>
+               <div class="chatBotContainer" id="chatBotContainer">
+                <div class="chatBotInnerContainer has-padding-bottom-1" id="chatBotInnerContainer">
+                   <div class="media is-marginless has-margin-top-1" style="padding-top: 0;">
+                     <div class="media-left">
+                       <figure class="image is-32x32">
+                            <img class="is-rounded" src="https://www.gravatar.com/avatar/5beb6288b37391868418d8d212b35db0?d=identicon&s=64">
+                        </figure>
+                     </div>
+                    <div class="media-content">
+                      <div class="content">
+                        <div class="notification message-container-left-branch is-info" style="padding: 0.8rem !important; margin-bottom: 0 !important;">
+                          <div> You and Adam are on Chat now</div>
+                        </div>
+                        <span class="is-0-8rem">Just now</span>   
+                      </div>
+                    </div>                  
+                   </div>
+              </div>
+            </div>
+              <form class="has-padding-top-1" id="sendBotMessageForm">
+                  <input type="hidden" name="_csrf_token" value="{{ csrf_token() }}">
+                  <input type="hidden" name="lang" value="{{ lang }}">
+                  <div class="field has-addons">
+                    <div class="control is-expanded">
+                      <input type="text" class="input is-primary" autocomplete="off" 
+                      name="message" minlength="1" placeholder="Write something...">
+                    </div>
+                    <div class="control">
+                    <button class="button is-primary" name="sendBotMessage" id="sendBotMessage">
+                      <svg id="i-send" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="20" height="20" fill="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                          <path fi d="M2 16 L30 2 16 30 12 20 Z M30 2 L12 20" />
+                      </svg>
+                    </button>
+                    </div>
+                  </div>
+              </form>
+          </div>
+        </div>
+       </div>
+     </div>
+    </div>
+  </div>
+{% endblock %}

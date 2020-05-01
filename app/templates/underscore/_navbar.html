@@ -1,0 +1,30 @@
+    <!-- START NAV -->
+    <nav class="navbar is-fixed-top">
+        <div class="container">
+            <div class="navbar-brand">
+                <a class="navbar-item logo-navbar" href="/">
+                    <img alt="" src="{{url_for('static', filename='images/langandcode-logo.png', _external=True)}}">
+                </a>
+                <span class="navbar-burger burger" data-target="navbarMenu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+            </div>
+            <div id="navbarMenu" class="navbar-menu">
+                <div class="navbar-end">
+                    <a class="navbar-item" href="/">Home</a>
+                    <a class="navbar-item" href="{{url_for('chatbot.index', _external=True)}}">
+                        <span>Chatbot
+                        </span>
+                    </a>
+                    <a class="navbar-item" href="{{url_for('main.hire_me', _external=True)}}">
+                        <span>Hire me
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </nav>
+    <!-- END NAV -->

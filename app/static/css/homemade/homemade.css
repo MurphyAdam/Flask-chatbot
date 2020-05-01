@@ -1,0 +1,230 @@
+html, body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-size: 14px!important;
+  background: #F0F2F4A6;
+}
+
+
+#btnAdd {
+  visibility: hidden;
+}
+
+.logo-font {
+  font-family: fantasy;
+  font-weight: normal;
+  font-size: medium;
+}
+
+.logo-navbar img {
+  max-height: 3rem!important;
+}
+
+a {
+	float:none;
+	font-weight: bold;
+}
+
+a.navbar-item.logo-navbar {
+    padding: 0.2em;
+    padding-left: 2em;
+}
+
+a.navbar-link {
+    font-weight: normal;
+}
+
+input.search-input {
+    border-radius: 5rem;
+    box-shadow: 0 8px 8px rgba(10, 10, 10, 0.1);
+}
+
+a.homemade-link {
+    font-weight: bold;
+    text-decoration: none !important;
+}
+
+.float-right {
+  float: right;
+}
+
+.homemade-button {
+    font-weight: bold;
+  }
+
+.is-bold {
+    font-weight: bold;
+  }
+
+
+.homemade-is-centered
+{
+    display: flex;
+    justify-content: center;
+}
+
+
+.navbar.is-white {
+  background: #F0F2F4;
+}
+
+.navbar-brand .brand-text {
+  font-size: 1.11rem;
+  font-weight: bold;
+}
+
+.articles {
+  margin: 5rem 0;
+  margin-top: -200px;
+}
+.articles .content p {
+    line-height: 1.9;
+    margin: 15px 0;
+}
+.author-image {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    width: 60px;
+    height: 60px;
+    margin-left: -30px;
+    border: 3px solid #ccc;
+    border-radius: 50%;
+}
+.media-center {
+  display: block;
+  margin-bottom: 1rem;
+}
+.article, .promo-block {
+  margin-top: 6rem;
+}
+div.column.is-8:first-child {
+  padding-top: 0;
+  margin-top: 0;
+}
+.article-title {
+  font-size: 2rem;
+  font-weight: lighter;
+  line-height: 2;
+}
+.article-subtitle {
+  color: #909AA0;
+  margin-bottom: 3rem;
+}
+.article-body {
+  line-height: 1.4;
+  margin: 0 6rem;
+}
+
+.card-image > .fa {
+  font-size: 8rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  color: #ccc;
+}
+.card-content.content {
+  font-size: 14px;
+  margin: 1rem 1rem;
+}
+.card-content.content h4 {
+  font-size: 16px;
+  font-weight: 700;
+}
+.card {
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.18);
+  margin-bottom: 2rem;
+}
+
+.is-shady {
+animation: flyintoright .4s backwards;
+background: #fff;
+box-shadow: rgba(0, 0, 0, .1) 0 1px 0;
+border-radius: 4px;
+margin: 10px;
+transition: all .2s ease-in-out;
+}
+.is-shady:hover {
+box-shadow: 0 10px 16px rgba(0, 0, 0, .13), 0 6px 6px rgba(0, 0, 0, .19);
+}
+
+.article-metadata {
+
+text-align: center;
+
+}
+
+.nav-description-font {
+font-family: cursive;
+}
+
+.logo-navbar img {
+max-height: 3rem;
+}
+
+.navbar-burger {
+height: unset;
+}
+
+
+.landpage-head-logo {
+color: #00b89c;
+}
+
+.landpage-head {
+font-family: BlinkMacSystemFont;
+font-size: 2em;
+}
+
+.is-homemade-font-blink {
+font-family: BlinkMacSystemFont;
+}
+
+.undecorated-link {
+text-decoration: none;
+}
+.card {
+box-shadow:0 8px 8px rgba(10, 10, 10, 0.1);
+border-radius:0.2rem;
+}
+
+.poor-button{
+  background: none;
+  border: none;
+}
+.chatContainer, .chatBotContainer   {
+overflow-y: scroll;
+height: 25rem;
+}
+.chatInnerContainer, .chatBotInnerContainer {
+padding: 2rem;
+}
+.message-box {
+min-height: 6rem !important;
+max-height: 50rem !important;
+}
+
+.message-container-right-branch {
+border-radius: 1rem;
+border-top-right-radius: 0rem;
+}
+
+.message-container-left-branch {
+border-radius: 1rem;
+border-top-left-radius: 0rem;
+}
+
+.is-0-8rem{
+font-size: 0.8rem;
+}
+
+.font-is-1rem{
+font-size: 1rem;
+}
+
+.hero.gradient.is-info {
+  background: #36D1DC;
+  background: -webkit-linear-gradient(to right, #5B86E5, #36D1DC);
+  background: linear-gradient(to right, #5B86E5, #36D1DC);
+}
+.hero.gradient .title, .hero.gradient .subtitle {
+  color: hsl(192, 17%, 99%);
+}

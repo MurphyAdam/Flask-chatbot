@@ -1,0 +1,229 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<div class="has-padding-top-2"></div>
+  <div class="section">
+    <div class="container">
+      {% include 'underscore/_flash_messages.html' %}
+        <div class="columns is-multiline">
+           <div class="column is-fullwidth">
+            <div class="card is-shady animated slideInLeft">
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-center">
+                      <img src="https://www.gravatar.com/avatar/5beb6288b37391868418d8d212b35db0?d=identicon&s=64" class="author-image" alt="">
+                  </div>
+                  <div class="media-content is-marginless has-padding-top-1">
+                      <p class="subtitle is-6 article-subtitle has-text-centered">
+                         <button class="poor-button tag is-black is-light is-normal is-bold">
+                          Majdi. M
+                         </button>
+                          <a href="mailto:elm.majidi@gmail.com">@Overflow0</a>
+                           <span class="has-tooltip-dark">
+                              <svg id="i-checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="#00d1b2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                                  <path d="M2 20 L12 28 30 4" />
+                              </svg>
+                            </span>
+                      </p>
+                     <div class="has-text-centered">
+                       <h3 class="title is-2">About Me</h3>
+                       <h4 class="subtitle is-5">Jack of all trades, master of "some"</h4>
+                     </div>
+                     <div class="ql-editor subtitle has-padding-top-1 is-6" style="height: auto;">
+                         I am a full-stack Python/ Flask web developer. I have worked with Python for the last four years, writing automation scripts for personal tasks to developing a lemmatizer/ POS-tagger from scratch for a variety of Arabic, Moroccan Arabic with Flask endpoints for public access and private API. I enjoy working with Flask and Python in general. I write Flask-based APIs with multi-authentication, either using an extension or plain.
+
+                          I also enjoy scrapping data, cleaning it and storing it in reusable formats using tools such Beautiful Soup or Scrappy. Other than Python, I also work with JavaScript and some of its frameworks such as Vue.js.
+                          Moreover, I have a backgound in linguistic, thus familiar with the different aspects of natural languages which adds to my NLP assest.
+
+                          Thank you for your time and considerations.
+                          <div class="buttons">
+                            <a class="button is-light" href="https://github.com/MurphyAdam">
+                              <svg id="i-github" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="32" height="32">
+                                  <path stroke-width="0" fill="dark" d="M32 0 C14 0 0 14 0 32 0 53 19 62 22 62 24 62 24 61 24 60 L24 55 C17 57 14 53 13 50 13 50 13 49 11 47 10 46 6 44 10 44 13 44 15 48 15 48 18 52 22 51 24 50 24 48 26 46 26 46 18 45 12 42 12 31 12 27 13 24 15 22 15 22 13 18 15 13 15 13 20 13 24 17 27 15 37 15 40 17 44 13 49 13 49 13 51 20 49 22 49 22 51 24 52 27 52 31 52 42 45 45 38 46 39 47 40 49 40 52 L40 60 C40 61 40 62 42 62 45 62 64 53 64 32 64 14 50 0 32 0 Z" />
+                              </svg>&nbsp;&nbsp;My Github
+                            </a>
+                            
+                            <a class="button is-light" href="mailto:elm.majidi@gmail.com">
+                              <svg id="i-mail" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                                  <path d="M2 26 L30 26 30 6 2 6 Z M2 6 L16 16 30 6" />
+                              </svg>
+                                &nbsp;&nbsp;&nbsp;&nbsp;Contact me
+                            </a>
+                          </div>
+                     </div>
+                  </div>
+               </div>
+             </div>
+           </div>
+        </div>
+    </div>
+    <div class="columns">
+      <div class="column">
+        <!-- Skills -->
+        <div class="card">
+          <div class="card-content skills-content">
+            <h3 class="title is-4">Skills</h3>
+            <div class="content">
+
+              <article class="media">
+                <div class="media-content">
+                  <div class="content">
+                    <p>
+                      <strong>Python:</strong>
+                      <br>
+                      <progress class="progress is-primary" value="79" max="100"></progress>
+                    </p>
+                  </div>
+                </div>
+              </article>
+
+
+              <article class="media">
+                <div class="media-content">
+                  <div class="content">
+                    <p>
+                      <strong>Data scraping, cleaning/ parsing, storage and visualization :</strong>
+                      <br>
+                      <progress class="progress is-primary" value="60" max="100"></progress>
+                    </p>
+                  </div>
+                </div>
+              </article>
+
+              <article class="media">
+                <div class="media-content">
+                  <div class="content">
+                    <p>
+                      <strong>Python science libraries and machine learning :</strong>
+                      <br>
+                      <progress class="progress is-primary" value="45" max="100"></progress>
+                    </p>
+                  </div>
+                </div>
+              </article>
+
+              <article class="media">
+                <div class="media-content">
+                  <div class="content">
+                    <p>
+                      <strong>JavaScript:</strong>
+                      <br>
+                      <progress class="progress is-primary" value="55" max="100"></progress>
+                    </p>
+                  </div>
+                </div>
+              </article>
+
+              <article class="media">
+                <div class="media-content">
+                  <div class="content">
+                    <p>
+                      <strong>Vue.js:</strong>
+                      <br>
+                      <progress class="progress is-primary" value="55" max="100"></progress>
+                    </p>
+                  </div>
+                </div>
+              </article>
+
+              <article class="media">
+                <div class="media-content">
+                  <div class="content">
+                    <p>
+                      <strong>JQuery:</strong>
+                      <br>
+                      <progress class="progress is-primary" value="80" max="100"></progress>
+                    </p>
+                  </div>
+                </div>
+              </article>
+
+              <article class="media">
+                <div class="media-content">
+                  <div class="content">
+                    <p>
+                      <strong>HTML5/CSS3</strong>
+                      <br>
+                      <progress class="progress is-primary" value="85" max="100"></progress>
+                    </p>
+                  </div>
+                </div>
+              </article>
+
+              <article class="media">
+                <div class="media-content">
+                  <div class="content">
+                    <p>
+                      <strong>Databases</strong>
+                      <br>
+                      <progress class="progress is-primary" value="65" max="100"></progress>
+                    </p>
+                  </div>
+                </div>
+              </article>
+
+              <article class="media">
+                <div class="media-content">
+                  <div class="content">
+                    <p>
+                      <strong>Unix/ Linux</strong>
+                      <br>
+                      <progress class="progress is-primary" value="70" max="100"></progress>
+                    </p>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="columns">
+
+  <section class="section" id="portfolio">
+    <div class="container">
+      <div class="has-text-centered">
+        <h3 class="title is-2 has-text-white">Portfolio</h3>
+        <h4 class="subtitle is-5 has-text-white">My latest Open-Source works</h4>
+      </div>
+      <br>
+
+      <div class="container portfolio-container">
+        <div class="columns is-multiline">
+          
+
+            <!-- band -->
+          <div class="column is-one-third">
+            <div class="card">
+              <header class="card-header">
+                <p class="card-header-title">
+                  <span>Flask-Chatbot</span>
+                  <span class="is-pulled-right">
+                    <a href="https://github.com/MurphyAdam/langandcode">
+                      <span class="tag is-default">v1</span>
+                    </a>
+                    <span class="tag is-default">Python</span>
+                    <span class="tag is-default">Flask</span>
+                    <span class="tag is-default">JavaScript/ JQuery</span>
+                    <span class="tag is-default">HTML5/ CSS3/ Bulma</span>
+                    <span class="tag is-default">Chatterbot</span>
+                  </span>
+                </p>
+              </header>
+              <div class="card-content">
+                <figure class="image">
+                  <img src="{{url_for('static', filename='images/portfolio/flask-chatbot-languageandcode.png', _external=True)}}" alt="Flask-Chatbot">
+                </figure>
+              </div>
+              <footer class="card-footer">
+                <a href="https://flask-chatbotx.herokuapp.com" class="card-footer-item">Live Demo</a>
+                <a href="https://github.com/MurphyAdam/langandcode" class="card-footer-item">Source
+                  Code</a>
+              </footer>
+            </div>
+          </div>
+          
+    </div>
+  </div>
+</div>
+  {% endblock %}

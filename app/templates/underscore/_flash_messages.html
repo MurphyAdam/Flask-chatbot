@@ -1,0 +1,15 @@
+      <div class="columns is-marginless is-centered">
+        <div class="column is-half">
+          {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+              {% for category, message in messages %}
+                <div class="notification {{ category }} is-bold animated bounceInLeft">
+                  <button class="delete"></button>
+                    {{ message }}
+                </div>
+              {% endfor %}
+
+          {% endif %}
+          {% endwith %}
+        </div>
+      </div>

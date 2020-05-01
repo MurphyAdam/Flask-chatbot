@@ -1,0 +1,38 @@
+
+
+        .navbar-link:not(.is-arrowless) {
+            padding-right: 2.5em;
+            font-weight: bold;
+        }
+
+        a.cards-link {
+          color: #4a4a4a;
+        }
+
+        .landpage-card {
+          font-family: BlinkMacSystemFont;
+          background-color: #99afaa;
+          color: #fff;
+          border-radius: 0.5rem !important;
+        }
+        a.homemade-link {
+          font-weight: bold;
+          color: #ff3860;
+        }
+        .hero.is-dark {
+          background-color: #000000;
+        }
+        a.homemade-link {
+          color: #ff3860;
+        }
+        .input::placeholder, .textarea::placeholder, .select select::placeholder {
+          color: #333 !important;
+        }
+
+        .input.homemade-input {
+            border: 0;
+            border-bottom: 2px #00d1b2;
+            border-style: solid;
+            border-radius: 0;
+            box-shadow: none;
+          }

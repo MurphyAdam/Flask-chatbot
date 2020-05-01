@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="description" content="langandcode.com">
+    <meta name="copyright" content="Copyright (c) 2020 Majdi M.">
+    <meta name="author" content="Majdi .M">
+    <meta name="theme-color" content="white">
+    <link rel="manifest" href="{{ url_for('static', filename='manifest.json') }}">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="transparent">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="{{ url_for('static', filename='images/icons/apple-icon-57x57.png') }}">
+    <link rel="apple-touch-icon" sizes="60x60" href="{{ url_for('static', filename='images/icons/apple-icon-60x60.png') }}">
+    <link rel="apple-touch-icon" sizes="72x72" href="{{ url_for('static', filename='images/icons/apple-icon-72x72.png') }}">
+    <link rel="apple-touch-icon" sizes="76x76" href="{{ url_for('static', filename='images/icons/apple-icon-76x76.png') }}">
+
+    <link rel="apple-touch-icon" sizes="114x114" href="{{ url_for('static', filename='images/icons/apple-icon-114x114.png') }}">
+    <link rel="apple-touch-icon" sizes="120x120" href="{{ url_for('static', filename='images/icons/apple-icon-120x120.png') }}">
+    <link rel="apple-touch-icon" sizes="144x144" href="{{ url_for('static', filename='images/icons/apple-icon-144x144.png') }}">
+    <link rel="apple-touch-icon" sizes="152x152" href="{{ url_for('static', filename='images/icons/apple-icon-152x152.png') }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='images/icons/apple-icon-180x180.png') }}">
+    <link rel="icon" type="image/png" sizes="192x192" href="{{ url_for('static', filename='images/icons/android-icon-192x192.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='images/icons/favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="96x96" href="{{ url_for('static', filename='images/icons/favicon-96x96.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='images/icons/favicon-16x16.png') }}">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="{{ url_for('static', filename='images/icons/ms-icon-144x144.png') }}">
+    <meta name="theme-color" content="#ffffff">
+
+    <meta name="keywords" content="programming, Python, language, Arabic, Moroccan Arabic, Darija, English, Stemming, NLP, Dictionary, Langues, Programmation, Translation, Morocco, Maroc, المغرب, دارجة, الدارجة">
+    <link rel="icon" type="image/x-icon" sizes="200x200" href="{{url_for('static', filename='images/langandcode-logo.png', _external=True)}}">
+    <title>{{title}}</title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/homemade/homemade.css', _external=True)}}">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/homemade/spacing.min.css', _external=True)}}">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/quill/1.3.7/quill.snow.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/homemade/__bulma-alter.css', _external=True)}}">
+</head>
+
+<body>
+    {% include 'underscore/_navbar.html' %}
+    <div class="" id="app">
+        {% block body %}
+        {% endblock %}
+        <footer class="footer is-paddingless has-background-dark has-text-light">
+            <div class="columns is-centered is-marginless">
+                <div class="column is-two-thirds">
+                    <div class="content has-text-centered">
+                        <p>
+                            <strong class="has-text-primary">ChatBot</strong>. Built from scratch. By <a class="has-text-primary" href="{{url_for('main.hire_me', _external=True)}}"> Majdi</a>.
+                        </p>
+                        <p>
+                            All rights reserved. 2020
+                        </p>
+                        <div>
+                            Made with
+                            <div class="animated heartBeat infinite">
+                                <span>
+                                    <svg id="i-heart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="22" height="22" fill="red" stroke="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                                        <path d="M4 16 C1 12 2 6 7 4 12 2 15 6 16 8 17 6 21 2 26 4 31 6 31 12 28 16 25 20 16 28 16 28 16 28 7 20 4 16 Z" />
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script type="text/javascript" nonce="{{ csp_nonce() }}" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    {% block footer_js %}
+    {% endblock %}
+    <script type="text/javascript" nonce="{{ csp_nonce() }}" src="{{url_for('static', filename='js/app.js', _external=True)}}"></script>
+    <script type="text/javascript" nonce="{{ csp_nonce() }}" src="{{url_for('static', filename='js/homemade/homemade.min.js', _external=True)}}"></script>
+</body>
+
+</html>
