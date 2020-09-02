@@ -1,3 +1,6 @@
+[![Anurag's github stats](https://github-readme-stats.vercel.app/api?username=MurphyAdam)](https://github.com/anuraghazra/github-readme-stats)
+
+
 # Flask-chatbot
 
 Flask-chatbot is a small PWA that is trained with the [Python Chatterbot](https://chatterbot.readthedocs.io/en/stable/).
